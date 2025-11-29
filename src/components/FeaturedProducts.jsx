@@ -39,13 +39,12 @@ function FeaturedProducts() {
           {message}
         </div>
       )}
-      <div className='flex flex-wrap justify-center gap-6 mx-auto '>
+      <div  className='flex flex-wrap justify-center gap-6 mx-auto '>
 {featuredproducts?.slice(0, 4).map((product) => (
         
-          <div key={product._id} className='flex flex-col items-center  p-4 rounded-lg'>
+          <div style={{width:"30%"}} key={product._id} className='flex flex-col items-center  p-4 rounded-lg'>
             <Link to={`/productDetails/${product?._id}`}>
-            <img className='w-full h-[450px] object-contain' src="https://media.istockphoto.com/id/667712200/sv/foto/professionellt-p%C3%A5-jobbet-top-view-ofman-arbetar-p%C3%A5-laptop-medan-du-sitter-p%C3%A5-hans-arbetsplats.jpg?s=2048x2048&w=is&k=20&c=ZEo0Pr-DKLYczJfBqn5V5JO3hrYPEA8OGvMhyTIP2JE=
-" />
+            <img className='w-full h-[450px] object-contain' src={`${product?.image}`} alt={product?.name} />
            
             <h6 className='text-center my-3'>{product.name}</h6>
             </Link>

@@ -12,6 +12,10 @@ import NotFoundPage from "./Pages/NotFoundPage";
 import Products from "./Pages/Products";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
+import ProductDetails from "./Pages/ProductDetails";
+
+
+
 import UpdateUser from "./components/admin/UpdateUser";
 
 
@@ -41,6 +45,7 @@ function App() {
             <Route path="update-user/:id" element={<UpdateUser />} />
           </Route>
           <Route path="/products" element={<Products />} />
+          <Route path="/ProductDetails/:id" element={<ProductDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

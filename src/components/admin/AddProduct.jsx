@@ -14,7 +14,7 @@ function AddProduct() {
       price: "",
       stock: "",
       category: "pc",
-      image: "",
+      image: "https://picsum.photos/200/300?random=1",
     })
 
 
